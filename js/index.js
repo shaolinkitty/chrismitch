@@ -1,10 +1,13 @@
-function swap() {
-var image=document.getElementById("image");
 var index = 0;
-var images = ["../images/schloss.jpg","../images/plansee.jpg"]
 
-if (++index >= images.length) index = 0;
-image.src = images[index];
+function swap () {
+  var image = document.getElementById('image');
+  var images = ['../images/schloss.jpg', '../images/plansee.jpg'];
+  image.src = images[index];
+  index++;
+  if (index >= images.length) {
+     index = 0;
+  }
 }
 
-setInterval(swap, 30000);
+setInterval(swap, 3000);

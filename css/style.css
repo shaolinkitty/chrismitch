@@ -9,7 +9,9 @@ body{
   font-size: 16px;
 }
 #main{
-  overflow: auto;
+  overflow:auto;
+  position:static;
+  min-height: 950px;
   }
 
 #banner{
@@ -61,14 +63,17 @@ body{
   padding: 0.5em 0;
 }
 
+#footer {
+  position: inherit;
+}
+
 #footer p{
   font: 10px 'Merriweather', serif;
 }
 
 .facts{
-  height:10em:
+  height: 10em;
   margin-bottom: 1em;
-  bacground-color: #efefef;
 }
 
 .facts p{
